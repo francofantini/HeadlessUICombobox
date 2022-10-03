@@ -10,7 +10,7 @@ const Home: NextPage = () => {
   const [isMultiple, setIsMultiple] = useState<boolean>(false)
     const [selectedOption, setSelectedOption] = useState()
 
-  const onChange = useCallback((e) => {
+  const onChange = useCallback((e: any) => {
     console.log(e)
     setSelectedOption(e)
   }, [])
